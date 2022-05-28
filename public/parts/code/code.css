@@ -1,0 +1,79 @@
+.pre_wrap_wrap{
+    background-color:#171e28;
+    width: 800px;
+    margin:0;
+    color:white;
+
+    position: relative;
+}
+
+.pre_wrap{
+    display:flex;
+    overflow-x: scroll;
+}
+
+.pre_wrap .left ul{
+    padding-inline-start: 0px;
+    padding:0 10px;
+    margin: 13px 0;
+}
+
+.pre_wrap .left ul li{
+    font-size:13px; 
+    padding: 0;
+    text-align: right;
+}
+
+
+.pre_wrap .right button{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+pre code{
+    display:inline-block;
+    padding:0;
+    font-size:15px;
+    line-height:1.33em;
+}
+
+.file_name_tab{
+    line-height: 30px;
+}
+
+
+.file_name_tab div{
+    background-color: #424c5c;
+    display: inline-block;
+    color:white;
+    padding:0 20px;
+    margin-left :20px;
+}
+
+
+.pre_wrap_wrap .pre_wrap button{
+    opacity: 0.4;
+    padding:5px;
+    cursor: pointer;
+}
+
+.pre_wrap_wrap .pre_wrap button div{
+    position: relative;
+
+    pointer-events: none;
+}
+.pre_wrap_wrap .pre_wrap button div .copied{
+    background-color: black;
+    color:white;
+    border-radius: 5px;
+    padding:0 10px;
+    white-space: nowrap;
+
+    position: absolute;
+    top:-100%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+
+    display: none;
+}
