@@ -3,10 +3,10 @@
 <!DOCTYPE html>
 <html lang="<?= LANGUAGE; ?>">
 
-    <?php getPartOnce(PUBLIC_DIR.'/parts/head.php'); ?>
+    <?php getPartOnce('head'); ?>
 
     <body>
-        <?php getPartOnce(PUBLIC_DIR.'/parts/header.php'); ?>
+        <?php getPartOnce('header'); ?>
 
         <h1>トップページです。</h1>
 
@@ -22,7 +22,7 @@
             </section>
         </main>
 
-        <?php getPartOnce(PUBLIC_DIR.'/parts/footer.php'); ?>
+        <?php getPartOnce('footer'); ?>
     </body>
 
 </html>

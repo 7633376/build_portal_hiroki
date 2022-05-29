@@ -29,6 +29,13 @@
         ]
     ]);
 
+    define('PARTS', [
+        'header' => PUBLIC_DIR.'/parts/header.php',
+        'footer' => PUBLIC_DIR.'/parts/footer.php',
+        'head'   => PUBLIC_DIR.'/parts/head.php',
+        'code'   => PUBLIC_DIR.'/parts/code/code.php',
+    ]);
+
     
 
 ?>

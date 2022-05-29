@@ -209,10 +209,10 @@
 <!DOCTYPE html>
 <html lang="<?= LANGUAGE; ?>">
 
-    <?php getPartOnce(PUBLIC_DIR.'/parts/head.php'); ?>
+    <?php getPartOnce('head'); ?>
 
     <body>
-        <?php getPartOnce(PUBLIC_DIR.'/parts/header.php'); ?>
+        <?php getPartOnce('header'); ?>
 
 
         <div id="main_container_wrap">
@@ -234,7 +234,7 @@
                             <h3 id="">id自動付与予定1</h3>
                             <div>
                                 <p>投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容</p>
-                                <?php getPart(PUBLIC_DIR.'/parts/code/code.php', $codes[0]); ?>
+                                <?php getPart('code', $codes[0]); ?>
                             </div>
                         </section>
 
@@ -242,7 +242,7 @@
                             <h3 id="">id自動付与予定2</h3>
                             <div>
                                 <p>投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容</p>
-                                <?php getPart(PUBLIC_DIR.'/parts/code/code.php', $codes[1]); ?>
+                                <?php getPart('code', $codes[1]); ?>
                             </div>
                         </section>
 
@@ -250,7 +250,7 @@
                             <h3 id="">id自動付与予定3</h3>
                             <div>
                                 <p>投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容</p>
-                                <?php getPart(PUBLIC_DIR.'/parts/code/code.php', $codes[2]); ?>
+                                <?php getPart('code', $codes[2]); ?>
                             </div>
                         <section>
                     </div>
@@ -266,7 +266,7 @@
         
 
 
-        <?php getPartOnce(PUBLIC_DIR.'/parts/footer.php'); ?>
+        <?php getPartOnce('footer'); ?>
 
         <!-- @todo コールバック関数利用して</body>直前に出力予定 -->
         <script>const $codes_count = <?= count($codes); ?></script>

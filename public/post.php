@@ -3,10 +3,10 @@
 <!DOCTYPE html>
 <html lang="<?= LANGUAGE; ?>">
 
-    <?php getPartOnce(PUBLIC_DIR.'/parts/head.php'); ?>
+    <?php getPartOnce('head'); ?>
 
     <body>
-        <?php getPartOnce(PUBLIC_DIR.'/parts/header.php'); ?>
+        <?php getPartOnce('header'); ?>
 
         <h1>投稿一覧ページです。</h1>
         <ul>
@@ -14,7 +14,7 @@
             <li><a href="">投稿2</a></li>
         </ul>
 
-        <?php getPartOnce(PUBLIC_DIR.'/parts/footer.php'); ?>
+        <?php getPartOnce('footer'); ?>
     </body>
 
 </html>

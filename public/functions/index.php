@@ -5,15 +5,15 @@ require_once(__DIR__.'/../../config.php');
 /**
  * パーツ読み込み専用(同ページ内で複数回読み込もうとしても、一回までしか読み込まない)
  */
-function getPartOnce($path, $args = []){
-    require_once($path);
+function getPartOnce($part_name, $args = []){
+    require_once(PARTS[$part_name]);
 }
 
 /**
  * パーツ読み込み専用
  */
-function getPart($path, $args = []){
-    require($path);
+function getPart($part_name, $args = []){
+    require(PARTS[$part_name]);
 }
 
 /**
