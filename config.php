@@ -36,6 +36,14 @@
         'code'   => PUBLIC_DIR.'/parts/code/code.php',
     ]);
 
+    define('STYLES', [
+        'style' => SERVER_PUBLIC_DIR.'/assets/css/style.css',
+        'code'  => SERVER_PUBLIC_DIR.'/parts/code/code.css',
+    ]);
+    define('SCRIPTS', [
+        'code' => SERVER_PUBLIC_DIR.'/parts/code/code.js',
+    ]);
+
     
 
 ?>
