@@ -234,7 +234,7 @@
                             <h3 id="">id自動付与予定1</h3>
                             <div>
                                 <p>投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容</p>
-                                <?php getPart(PUBLIC_DIR.'/parts/code.php', $codes[0]); ?>
+                                <?php getPart(PUBLIC_DIR.'/parts/code/code.php', $codes[0]); ?>
                             </div>
                         </section>
 
@@ -242,7 +242,7 @@
                             <h3 id="">id自動付与予定2</h3>
                             <div>
                                 <p>投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容</p>
-                                <?php getPart(PUBLIC_DIR.'/parts/code.php', $codes[1]); ?>
+                                <?php getPart(PUBLIC_DIR.'/parts/code/code.php', $codes[1]); ?>
                             </div>
                         </section>
 
@@ -250,7 +250,7 @@
                             <h3 id="">id自動付与予定3</h3>
                             <div>
                                 <p>投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容</p>
-                                <?php getPart(PUBLIC_DIR.'/parts/code.php', $codes[2]); ?>
+                                <?php getPart(PUBLIC_DIR.'/parts/code/code.php', $codes[2]); ?>
                             </div>
                         <section>
                     </div>
