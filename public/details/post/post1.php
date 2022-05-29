@@ -269,6 +269,7 @@
         <?php getPartOnce(PUBLIC_DIR.'/parts/footer.php'); ?>
 
         <!-- @todo コールバック関数利用して</body>直前に出力予定 -->
+        <script>const $codes_count = <?= count($codes); ?></script>
         <script src="<?= '../../parts/code/code.js'; ?>"></script>
 
     </body>

@@ -40,10 +40,10 @@ $code_line_count = (substr_count($code, "\n")) + 1;
 
 <!-- @todo コピーをアイコンにして、文字をポップアップにする -->
 <!-- @todo codeよりも前に設置してjs,css調整する？ -->
-<button id="copy_button_<?= escape($code_key); ?>">
+<button id="code_copy_button_<?= escape($code_key); ?>">
     <div>
         <span class="copied">コピーしました！</span>
-        <i style="pointer-events: none;" class="fa-regular fa-copy fa-2x"></i>
+        <i class="fa-regular fa-copy fa-2x"></i>
     </div>
 </button>
 
