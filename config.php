@@ -17,7 +17,8 @@
     /**
      * ユーザーが自由に編集できる定数
      */
-    define('PUBLIC_DIR', __DIR__.'/public');
+    define('PUBLIC_DIR'       , str_replace("\\", '/', __DIR__.'/public'));
+    define('SERVER_PUBLIC_DIR', str_replace($_SERVER['DOCUMENT_ROOT'], '', PUBLIC_DIR));
     define('LANGUAGE', 'ja');
 
     define('CODE_COLORS', [
