@@ -206,72 +206,58 @@
 
 
 
-<!DOCTYPE html>
-<html lang="<?= LANGUAGE; ?>">
-
-    <?php getPartOnce('head'); ?>
-
-    <body>
-        <?php getPartOnce('header'); ?>
+<?php getPartOnce('header'); ?>
 
 
-        <div id="main_container_wrap">
-            <div class="main_container">
-                <main>
-                    <h1>投稿1タイトル</h1>
+    <div id="main_container_wrap">
+        <div class="main_container">
 
-                    <div>
-                        <nav>
-                            <h2>目次</h2>
-                            <ul>
-                                <li>内容１</li>
-                                <li>内容２</li>
-                                <li>内容３</li>
-                            </ul>
-                        </nav>
+            <main>
+                <h1>投稿1タイトル</h1>
 
-                        <section>
-                            <h3 id="">id自動付与予定1</h3>
-                            <div>
-                                <p>投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容</p>
-                                <?php getPart('code', $codes[0]); ?>
-                            </div>
-                        </section>
+                <div>
+                    <nav>
+                        <h2>目次</h2>
+                        <ul>
+                            <li>内容１</li>
+                            <li>内容２</li>
+                            <li>内容３</li>
+                        </ul>
+                    </nav>
 
-                        <section>
-                            <h3 id="">id自動付与予定2</h3>
-                            <div>
-                                <p>投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容</p>
-                                <?php getPart('code', $codes[1]); ?>
-                            </div>
-                        </section>
+                    <section>
+                        <h3 id="">id自動付与予定1</h3>
+                        <div>
+                            <p>投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容</p>
+                            <?php getPart('code', $codes[0]); ?>
+                        </div>
+                    </section>
 
-                        <section>
-                            <h3 id="">id自動付与予定3</h3>
-                            <div>
-                                <p>投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容</p>
-                                <?php getPart('code', $codes[2]); ?>
-                            </div>
-                        <section>
-                    </div>
-                </main>
-            </div>
+                    <section>
+                        <h3 id="">id自動付与予定2</h3>
+                        <div>
+                            <p>投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容</p>
+                            <?php getPart('code', $codes[1]); ?>
+                        </div>
+                    </section>
 
-                
-            
-                
+                    <section>
+                        <h3 id="">id自動付与予定3</h3>
+                        <div>
+                            <p>投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容投稿内容</p>
+                            <?php getPart('code', $codes[2]); ?>
+                        </div>
+                    <section>
+                </div>
+            </main>
 
-            
         </div>
+    </div>
         
 
 
-        <?php getPartOnce('footer'); ?>
+    <!-- @todo コールバック関数利用して</body>直前に出力予定 -->
+    <script>const $codes_count = <?= count($codes); ?></script>
+    <script src="<?= SCRIPTS['code']; ?>"></script>
 
-        <!-- @todo コールバック関数利用して</body>直前に出力予定 -->
-        <script>const $codes_count = <?= count($codes); ?></script>
-        <script src="<?= SCRIPTS['code']; ?>"></script>
-
-    </body>
-
-</html>
+<?php getPartOnce('footer'); ?>

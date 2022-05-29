@@ -1,20 +1,12 @@
 <?php require_once('./functions/index.php'); ?>
 
-<!DOCTYPE html>
-<html lang="<?= LANGUAGE; ?>">
 
-    <?php getPartOnce('head'); ?>
+<?php getPartOnce('header'); ?>
 
-    <body>
-        <?php getPartOnce('header'); ?>
+    <h1>投稿一覧ページです。</h1>
+    <ul>
+        <li><a href="./details/post/post1.php">投稿1</a></li>
+        <li><a href="">投稿2</a></li>
+    </ul>
 
-        <h1>投稿一覧ページです。</h1>
-        <ul>
-            <li><a href="./details/post/post1.php">投稿1</a></li>
-            <li><a href="">投稿2</a></li>
-        </ul>
-
-        <?php getPartOnce('footer'); ?>
-    </body>
-
-</html>
+<?php getPartOnce('footer'); ?>
